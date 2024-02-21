@@ -43,7 +43,7 @@ mkdir 03_FLYE
 # Flye command
 flye --pacbio-hifi 00_RAW/SRR13577846.fastq --out-dir 03_FLYE --threads 10
 ```
-## Assembly Quality Control with QUAST
+## Assembly Quality Control with QUAST and BUSCO
 The graph shows that most of the contigs are solved but we have ca four
 contigs that are troublesome to assemble. Probably high repeats.
 
