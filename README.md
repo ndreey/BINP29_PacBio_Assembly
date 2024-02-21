@@ -51,7 +51,7 @@ contigs that are troublesome to assemble. Probably high repeats.
 
 ### QUAST
 I am not interested in the icarus viewer so i specify not to build it 
-using `--no-icarus`.
+using `--no-icarus`. The reference genome used: [GCF_000146045.2](https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4932/)
 ```
 mkdir 04_QUAST
 
