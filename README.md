@@ -96,4 +96,5 @@ busco -i 03_FLYE/assembly.fasta -m genome -c 12 --out_path 05_BUSCO/ -l saccharo
     ---------------------------------------------------
 
 
-
+### BUSCO PLOT
+![BUSCO PLOT](figures/busco_figure.png)
