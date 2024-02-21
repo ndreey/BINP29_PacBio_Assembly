@@ -6,7 +6,7 @@
 ```
 sra-tools               3.0.1
 fastqc                  0.12.1
-
+flye                    2.9.3
 ```
 
 
@@ -30,5 +30,48 @@ mkdir 01_QC
 # Run FastQC
 fastqc -o 01_QC -f fastq -t 10 00_RAW/SRR13577846.fastq
 ```
+
+## _De novo_ assembly
+The data is HiFi PacBio SMRT long reads, thus the flag `--pacbio-hifi` is
+used.
+```
+# Creating out directory
+mkdir 03_FLYE
+
+# Flye command
+flye --pacbio-hifi 00_RAW/SRR13577846.fastq --out-dir 03_FLYE --threads 10
+```
+## Assembly Quality Control with QUAST
+The graph shows that most of the contigs are solved but we have ca four
+contigs that are troublesome to assemble. Probably high repeats.
+
+![PacBio HiFi Graph](figures/pacbio-hifi-graph.png)
+
+### QUAST
+I am not interested in the icarus viewer so i specify not to build it 
+using `--no-icarus`.
+```
+mkdir 04_QUAST
+
+# QUAST call
+quast -o 04_QUAST/ -r 00_RAW/GCF_000146045.2_R64_genomic.fna -t 12 --no-icarus 03_FLYE/assembly.fasta
+```
+
+#### QUAST results
+As we see the genome fractions is very high, almost 100%.
+However it is not perfect as the NGA50 is 35% of the N50
+
+| Genome statistics       | assembly   |
+|-------------------------|------------|
+| Genome fraction (%)     | 97.266     |
+| Duplication ratio       | 1.017      |
+| Largest alignment       | 843303     |
+| Total aligned length    | 12030510   |
+| NGA50                   | 284119     |
+| NG50 and N50            | 809074     |
+| GC %                    | 38.3       |
+
+
+### BUSCO
 
 

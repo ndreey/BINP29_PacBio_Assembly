@@ -1,2 +1,12 @@
 00_RAW/SRR13577846.fastq
 00_RAW/SRR13577846.fastq.fai
+00_RAW/GCF_000146045.2_R64_genomic.fna
+03_FLYE/00-assembly/
+03_FLYE/10-consensus/
+03_FLYE/20-repeat/
+03_FLYE/30-contigger/
+03_FLYE/40-polishing/
+03_FLYE/assembly_graph.gfa
+03_FLYE/assembly_info.txt
+03_FLYE/flye.log
+03_FLYE/params.json
