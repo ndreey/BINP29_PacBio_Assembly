@@ -10,3 +10,6 @@
 03_FLYE/assembly_info.txt
 03_FLYE/flye.log
 03_FLYE/params.json
+busco_downloads/
+05_BUSCO/BUSCO_assembly.fasta/logs/
+05_BUSCO/BUSCO_assembly.fasta/run_saccharomycetes_odb10/

@@ -7,6 +7,8 @@
 sra-tools               3.0.1
 fastqc                  0.12.1
 flye                    2.9.3
+quast                   5.2.0
+busco                   5.6.1
 ```
 
 
@@ -73,5 +75,25 @@ However it is not perfect as the NGA50 is 35% of the N50
 
 
 ### BUSCO
+
+```
+mkdir 05_BUSCO
+
+# BUSCO call
+busco -i 03_FLYE/assembly.fasta -m genome -c 12 --out_path 05_BUSCO/ -l saccharomycetes_odb10
+```
+
+    ---------------------------------------------------
+    |Results from dataset saccharomycetes_odb10        |
+    ---------------------------------------------------
+    |C:99.6%[S:97.4%,D:2.2%],F:0.1%,M:0.3%,n:2137      |
+    |2129    Complete BUSCOs (C)                       |
+    |2081    Complete and single-copy BUSCOs (S)       |
+    |48    Complete and duplicated BUSCOs (D)          |
+    |2    Fragmented BUSCOs (F)                        |
+    |6    Missing BUSCOs (M)                           |
+    |2137    Total BUSCO groups searched               |
+    ---------------------------------------------------
+
 
 
