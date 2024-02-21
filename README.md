@@ -97,4 +97,10 @@ busco -i 03_FLYE/assembly.fasta -m genome -c 12 --out_path 05_BUSCO/ -l saccharo
 
 
 ### BUSCO PLOT
+
+```
+# Generating plots
+generate_plot.py -wd 05_BUSCO/BUSCO_assembly.fasta/
+```
+
 ![BUSCO PLOT](figures/busco_figure.png)
