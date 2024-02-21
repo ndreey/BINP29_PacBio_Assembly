@@ -1,0 +1,17 @@
+2024-02-21 15:50:30 INFO:__main__	****************** Start plot generation at 02/21/2024 15:50:30 ******************
+2024-02-21 15:50:30 INFO:__main__	Load data ...
+2024-02-21 15:50:30 INFO:__main__	Loaded 05_BUSCO/BUSCO_assembly.fasta/short_summary.specific.saccharomycetes_odb10.BUSCO_assembly.fasta.txt successfully
+2024-02-21 15:50:30 INFO:__main__	Generate the R code ...
+2024-02-21 15:50:30 INFO:__main__	Run the R code ...
+2024-02-21 15:50:33 INFO:__main__	
+[1] "Plotting the figure ..."
+[1] "Done"
+
+2024-02-21 15:50:33 ERROR:__main__	
+Warning message:
+The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.
+ℹ Please use the `linewidth` argument instead. 
+
+2024-02-21 15:50:33 INFO:__main__	Plot generation done. Total running time: 2.397918462753296 seconds
+2024-02-21 15:50:33 INFO:__main__	Results written in 05_BUSCO/BUSCO_assembly.fasta/
+
