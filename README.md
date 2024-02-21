@@ -1,6 +1,7 @@
 # BINP29 PacBio Long Read Assembly Excersice
 Exercise in Long Read _de novo_ assembly for BINP29 course.
 
+We are using the PacBio SMRT HIFI reads that can be found here: [SRR13577846](https://trace.ncbi.nlm.nih.gov/Traces/?run=SRR13577846)
 ## Program versions
 
 ```
