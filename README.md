@@ -1,5 +1,5 @@
 # BINP29 PacBio Long Read Assembly Excersice
-
+Exercise in Long Read _de novo_ assembly for BINP29 course.
 
 ## Program versions
 
